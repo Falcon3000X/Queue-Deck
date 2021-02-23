@@ -26,6 +26,17 @@ namespace Queue__Deck.First_Model
             items.Insert(0, data);
         }
 
+        public T Dequeue()
+        {
+            var item = Head;
+            items.Remove(item);
+            return item;
+        }
+
+        public T Peek()
+        {
+            return Head;
+        }
 
 
 
