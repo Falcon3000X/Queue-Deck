@@ -15,7 +15,7 @@ namespace Queue__Deque
 
             var easyQueue = new EasyQueue<int>();
 
-            easyQueue.Enqueue(1);
+            easyQueue.Enqueue(1); // Добавление данных
             easyQueue.Enqueue(2);
             easyQueue.Enqueue(3);
             easyQueue.Enqueue(4);
@@ -24,6 +24,7 @@ namespace Queue__Deque
             Console.WriteLine(easyQueue.Dequeue());// Извлекаем первый елемент
             Console.WriteLine(easyQueue.Peek()); // Смотрим на Head
             Console.WriteLine(easyQueue.Dequeue()); // Извлекаем первый елемент снова
+
             Console.ReadLine();
         }
     }
