@@ -24,7 +24,6 @@ namespace Queue__Deque
             Console.WriteLine(easyQueue.Dequeue());// Извлекаем первый елемент
             Console.WriteLine(easyQueue.Peek()); // Смотрим на Head
             Console.WriteLine(easyQueue.Dequeue()); // Извлекаем первый елемент снова
-
             Console.ReadLine();
         }
     }
