@@ -13,6 +13,7 @@ namespace Queue__Deque
         {
             // EasyQueue
 
+            Console.WriteLine("EasyQueue");
             var easyQueue = new EasyQueue<int>();
 
             easyQueue.Enqueue(1); // Добавление данных
@@ -24,6 +25,51 @@ namespace Queue__Deque
             Console.WriteLine(easyQueue.Dequeue());// Извлекаем первый елемент
             Console.WriteLine(easyQueue.Peek()); // Смотрим на Head
             Console.WriteLine(easyQueue.Dequeue()); // Извлекаем первый елемент снова
+            Console.WriteLine();
+            //--------------------------------------------------------------------
+
+            // ArrayQueue
+
+            Console.WriteLine("ArrayQueue");
+
+            var arrayQueue = new ArrayQueue<int>(10);
+            arrayQueue.Enqueue(1);
+            arrayQueue.Enqueue(2);
+            arrayQueue.Enqueue(3);
+            arrayQueue.Enqueue(4);
+            arrayQueue.Enqueue(5);
+
+            Console.WriteLine(arrayQueue.Dequeue());
+            Console.WriteLine(arrayQueue.Peek());
+            Console.WriteLine(arrayQueue.Dequeue());
+            Console.WriteLine();
+            //----------------------------------------------------------------------
+
+            // LinkedQueue
+
+            Console.WriteLine("LinkedQueue");
+
+            var linkedQueue = new LinkedQueue<int>();
+            linkedQueue.Enqueue(1);
+            linkedQueue.Enqueue(2);
+            linkedQueue.Enqueue(3);
+            linkedQueue.Enqueue(4);
+            linkedQueue.Enqueue(5);
+
+            Console.WriteLine(linkedQueue.Dequeue());
+            Console.WriteLine(linkedQueue.Peek());
+            Console.WriteLine(linkedQueue.Dequeue());
+            Console.WriteLine(linkedQueue.Dequeue());
+            Console.WriteLine(linkedQueue.Dequeue());
+
+            Console.WriteLine();
+            //----------------------------------------------------------------------
+
+
+
+
+
+
 
             Console.ReadLine();
         }
