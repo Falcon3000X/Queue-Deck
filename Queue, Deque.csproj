@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="First Model\ArrayQueue.cs" />
+    <Compile Include="First Model\EasyDeque.cs" />
     <Compile Include="First Model\EasyQueue.cs" />
     <Compile Include="First Model\Item.cs" />
     <Compile Include="First Model\LinkedQueue.cs" />

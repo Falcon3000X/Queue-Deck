@@ -42,6 +42,7 @@ namespace Queue__Deque
             Console.WriteLine(arrayQueue.Dequeue());
             Console.WriteLine(arrayQueue.Peek());
             Console.WriteLine(arrayQueue.Dequeue());
+
             Console.WriteLine();
             //----------------------------------------------------------------------
 
@@ -65,6 +66,27 @@ namespace Queue__Deque
             Console.WriteLine();
             //----------------------------------------------------------------------
 
+            Console.WriteLine("EasyDeque");
+
+            var easyDeque = new EasyDeque<int>();
+            easyDeque.PushFront(1);
+            easyDeque.PushFront(2);
+            easyDeque.PushFront(3);
+            easyDeque.PushBack(40);
+            easyDeque.PushBack(50);
+            easyDeque.PushFront(600);
+            easyDeque.PushBack(700);
+
+            Console.WriteLine(easyDeque.PopFront());
+            Console.WriteLine(easyDeque.PopFront());
+            Console.WriteLine(easyDeque.PopFront());
+            Console.WriteLine(easyDeque.PopBack());
+            Console.WriteLine(easyDeque.PopFront());
+            Console.WriteLine(easyDeque.PopBack());
+
+
+            Console.WriteLine();
+            //----------------------------------------------------------------------
 
 
 
