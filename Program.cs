@@ -88,6 +88,21 @@ namespace Queue__Deque
             Console.WriteLine();
             //----------------------------------------------------------------------
 
+            Console.WriteLine("DuplexLinkedDeque");
+
+            var linkedDeque = new DuplexLinkedDeque<int>();
+            linkedDeque.PushFront(1);
+            linkedDeque.PushFront(2);
+            linkedDeque.PushFront(3);
+            linkedDeque.PushBack(4);
+            linkedDeque.PushBack(5);
+
+            Console.WriteLine(linkedDeque.PopFront());
+            Console.WriteLine(linkedDeque.PopBack());
+
+
+            Console.WriteLine();
+            //----------------------------------------------------------------------
 
 
 
